@@ -1,0 +1,15 @@
+# Production requirements
+-r base.txt
+
+# WSGI/ASGI server (Daphne is in base for Channels)
+gunicorn==23.0.0
+
+# Performance
+django-redis==5.4.0
+django-cachalot==2.6.3
+
+# Security
+django-csp==3.8
+
+# Monitoring
+ddtrace==2.11.4
